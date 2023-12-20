@@ -1,0 +1,77 @@
+body {
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.RxvJjIhW3_DpUjmmo3qXOAHaEo&pid=Api&P=0&h=180);
+    position: relative;
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding:10px;
+    font-family: 'Handjet', cursive;
+    position: fixed;
+   }
+   header a{
+    margin-right: 10px;
+    margin-left: 20px;       
+   }
+   button {
+    background-color: rgba(128, 128, 128, 0.19);
+    border-radius: 50%;
+    height: 10vh;
+   }
+   button:hover{
+    background-color: white;
+   }
+.element1 {
+    margin-top: 100px;
+    text-align: center;
+    max-width: 100%;
+    font-family: 'Mooli', sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+}
+.table-all th:first-child{
+    width: 30%;
+}
+.table-all th:first-child, .table-all td:first-child {
+    padding-left: 16px;
+}
+.table-all td, .table-all th{
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+td {
+    display: table-cell;
+    border-bottom: 1px solid white;
+    vertical-align: inherit;
+    border-right: 1px solid white;
+}
+.table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 85%;
+    display: table;
+    border: 1px solid white;
+    font-family: 'Nunito', sans-serif;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+h2 {
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; // Una colonna per schermi stretti
+    }
+}

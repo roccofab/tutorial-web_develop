@@ -1,0 +1,126 @@
+body {
+    background-image:  url(https://tse4.mm.bing.net/th?id=OIP.RxvJjIhW3_DpUjmmo3qXOAHaEo&pid=Api&P=0&h=180);
+    position: relative;
+    color: white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  padding:10px;
+  font-family: 'Handjet', cursive;
+  position: fixed;
+ }
+ header a{
+  margin-right: 10px;
+  margin-left: 20px;       
+ }
+ button {
+  background-color: rgba(128, 128, 128, 0.19);
+  border-radius: 50%;
+  height: 10vh;
+ }
+ button:hover{
+  background-color: white;
+ }
+.element1{
+    text-align: center;
+    text-shadow: 3px 2px black;
+    color: white;
+    font-family: 'Mooli', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    
+}
+.element3 {
+    border: 1px solid white;
+    box-shadow: 4px 4px rgb(200, 200, 600);
+    padding-left: 10px;
+}
+.element3 a{
+    text-decoration: none;
+    font-size: 15px;
+}
+ .element5 img,
+ .element6 img,
+ .element7 img,
+ .element10 img,
+ .gradients img {
+    max-width: 75%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: var(--cp-color-1);
+}
+.zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+  .typewriter {
+    width: 21.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #212121;
+    animation: cursor 1s step-start infinite, 
+      text 4s steps(10) alternate infinite;
+  }
+  
+  @keyframes cursor {
+    0%, 100% { 
+      border-color: #212121; 
+    }
+  }
+  
+  @keyframes text {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 15.5ch; 
+    }
+  }
+  .element10 td{
+    padding: 20px;
+  }
+  .gradients {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (max-width: 400px) {
+    .element1 {
+      font-size: 20px;
+    }
+  }
+  .flex-code {
+    border: 3px solid  white;
+    background-color:  black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    max-height: 100vh;
+    overflow-y: auto;
+    width: 85%;
+    font-family:'Source Code Pro', monospace;
+  }
+  h1,
+  h3,
+  h4 {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+
+  
+
+  

@@ -1,0 +1,117 @@
+body {
+    background-image:  url(https://tse4.mm.bing.net/th?id=OIP.RxvJjIhW3_DpUjmmo3qXOAHaEo&pid=Api&P=0&h=180);
+    position:relative;
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding:10px;
+    font-family: 'Handjet', cursive;
+    position: fixed;
+   }
+   header a{
+    margin-right: 10px;
+    margin-left: 20px;       
+   }
+   button {
+    background-color: rgba(128, 128, 128, 0.19);
+    border-radius: 50%;
+    height: 10vh;
+   }
+   button:hover{
+    background-color: white;
+   }
+.intro{
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+    align-items: center;
+}
+.intro h1{
+    margin-left: 100px;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+}
+img{
+    max-width: 50%;
+}
+.code {
+    background-color: white;
+    color: black;
+    
+}
+code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgba(128, 128, 128, 0.227);
+}
+.content {
+    display: flex;
+    flex-flow: column;
+    
+}
+.content pre{
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+a {
+    text-decoration: underline;
+    color: red;
+}
+.tableCont {
+    border: 2px solid red;
+    padding: 10px;
+    max-width: 90%;
+ }
+ .tableCont td{
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+ }
+ @media (max-width: 450px) {
+    .intro,
+    .container {
+        width: 95%;
+        height: auto;
+    }
+ }
+ h1,
+h3,
+h4 {
+  font-family: 'Noto Sans', sans-serif;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+  }
+  .code p{
+    font-weight: bolder;
+  }
+  @media (max-width: 450px) {
+    .attributes {
+        width: 100%;
+        overflow-x: auto;
+    }
+  }
+  @media (max-width: 450px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+  }
+  .content1 {
+    padding-top: 50px;
+  }
+  @media (max-width: 750px) {
+    .content1 {
+        padding-top: 50px;
+    }
+  }
+
+
+ 

@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items Properties</title>
+    <link rel="stylesheet" href="cssFlex2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto:ital,wght@1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="file:///C:/Users/lenovo/Desktop/sito/htmlCssTutorial.html/index.html">
+        <button >Homepage</button>
+        </a>  
+    </header>
+    <div class="intro"><br><br><br><br><br><br>
+        <h1 style=" margin-right: 100px;">Child Elements</h1>
+        <p>The direct child elements of a flex container automatically becomes flexible (flex) items.</p>
+        <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 012726.png" alt="flexible boxes">
+    </div>
+    <div class="container">
+        <div class="content">
+            <p>The flex item properties are: </p>
+            <ol>
+                <li><a href="#prop1">order</a></li>
+                <li><a href="#prop2">flex-grow</a></li>
+                <li><a href="#prop3">flex-shrink</a></li>
+                <li><a href="#prop4">flex-basis</a></li>
+                <li><a href="#prop5">flex</a></li>
+                <li><a href="#prop6">align-self</a></li>
+            </ol>
+            <table class="tableCont">
+               <tr style="background-color: rgba(128, 128, 128, 0.299);">
+                 <td>
+                     <strong>Property:</strong>
+                 </td>
+                 <td>
+                    <strong>Description:</strong>
+                 </td>
+               </tr>
+               <tr>
+                 <td style="text-decoration: underline;">
+                    align-self 
+                 </td>
+                 <td>
+                    Specifies the alignment for a flex item (overrides the flex container's align-items property)
+                 </td>
+               </tr>
+               <tr>
+                 <td style="text-decoration: underline;">
+                    flex
+                 </td>
+                 <td>
+                    A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties
+                 </td>
+               </tr>
+               <tr>
+                 <td style="text-decoration: underline;">
+                    flex-basis
+                 </td>
+                 <td>
+                    Specifies the initial length of a flex item
+                 </td>
+               </tr>
+               <tr>
+                 <td style="text-decoration: underline;">
+                    flex-grow
+                 </td>
+                 <td>
+                    Specifies how much a flex item will grow relative to the rest of the flex items inside the same container
+                 </td>
+               </tr>
+               <tr>
+                 <td style="text-decoration: underline;">
+                     flex-shrink
+                 </td>
+                 <td>
+                    Specifies how much a flex item will shrink relative to the rest of the flex items inside the same container
+                 </td>
+               </tr>
+               <tr>
+                 <td style="text-decoration: underline;">
+                    order
+                 </td>
+                 <td>
+                    Specifies the order of the flex items inside the same container
+                 </td>
+               </tr>
+            </table>
+        </div><br>
+        <div class="content">
+            <h2 id="prop1">1)The Order Property:</h2>
+            <p>The <strong style="color: red;">order</strong> property specifies the order of the flex items.</p>
+            <pre class="code">
+                <h3>Example:</h3>
+                <p>The <strong style="color: red;"> order </strong> property can change the order <br>of the flex items:</p>
+                <code>
+< div class="flex-container" >
+    < div style="order: 3">1< /div >
+    < div style="order: 2">2< /div >
+    < div style="order: 4">3< /div >
+    < div style="order: 1">4< /div >
+< /div>      
+                </code>
+                <h4>Output:</h4>
+                <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 003546.png" alt="order flex items with order property">
+            </pre>
+        </div><br><br>
+        <div class="content">
+            <h2 id="prop2">2)Flex-grow Property:</h2>
+            <p>The <strong style="color: red;">flex-grow</strong> property specifies how much a flex item will grow relative to the rest of the flex items.</p>
+            <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 215053.png" alt="flexible box 3 grown">
+            <pre class="code">
+                <h3>Example:</h3>
+                <p>Make the third flex item grow <br>eight times faster than the other flex items:</p>
+                <code>
+< div class="flex-container" >
+    < div style="flex-grow: 1">1< /div >
+    < div style="flex-grow: 1">2< /div >
+    < div style="flex-grow: 8">3< /div >
+< /div >
+                </code>
+                <h4>Output:</h4>
+                <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 215652.png" alt="flexible box 3 grown">
+            </pre>
+        </div><br><br>
+        <div class="content">
+            <h2 id="prop3">3)The Flex-shrink Property:</h2>
+            <p>The <strong style="color: red;">flex-shrink</strong> property specifies how much a flex item will shrink relative to the rest of the flex items.</p>
+            <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 220419.png" alt="flex-shrink general example">
+            <pre class="code">
+                <h3>Example:</h3>
+                <p>Do not let the third flex item shrink <br>as much as the other flex items:</p>
+                <code>
+< div class="flex-container" >
+    < div >1< /div >
+    < div >2< /div >
+    < div style="flex-shrink: 0">3< /div >
+    < div >4< /div >
+    < div >5< /div >
+    < div >6< /div >
+    < div >7< /div >
+    < div >8< /div >
+    < div >9< /div >
+    < div >10< /div >
+< /div >
+                </code>
+                <h4>Output:</h4>
+                <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 222852.png" alt="flexible box 3 shrinked">
+            </pre>
+        </div><br><br>
+        <div class="content">
+            <h2 id="prop4">4)Flex-basis Property:</h2>
+            <p>The <strong style="color: red;">flex-basis</strong> property specifies the initial length of a flex item.</p>
+            <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 223523.png" alt="general flex-basis property">
+            <pre class="code">
+                <h3>Example:</h3>
+                <p>Set the initial length of the third flex item <br>to 200 pixels:</p>
+                <code>
+< div class="flex-container" >
+    < div>1< /div >
+    < div>2< /div >
+    < div style="flex-basis: 200px">3< /div >
+    < div >4< /div >
+< /div >
+                </code>
+                <h4>Output:</h4>
+                <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 224032.png" alt="the third flexible box is 200px">
+            </pre>
+        </div><br><br>
+        <div class="content">
+            <h2 id="prop5">5)The Flex Property:</h2>
+            <p>The <strong style="color: red;">flex property</strong> is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</p>
+            <pre class="code">
+                <h3>Example:</h3>
+                <p>Make the third flex item not growable (0),<br>not shrinkable (0), and with an initial length <br>of 200 pixels:</p>
+                <code>
+< div class="flex-container" >
+    < div >1< /div >
+    < div >2< /div >
+    < div style="flex: 0 0 200px">3< /div >
+    < div >4< /div >
+< /div >
+                </code>
+                <h4>Output:</h4>
+                <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 233509.png" alt="">
+            </pre>
+        </div><br><br>
+        <div class="content">
+            <h2 id="prop6">6)The Align-self Property:</h2>
+            <p>The <strong style="color: red;">align-self</strong> property specifies the alignment for the selected item inside the flexible container.<br>The <strong style="color: red;">align-self</strong> property overrides the default alignment set by the container's align-items property.</p>
+            <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 233922.png" alt="">
+            <pre class="code">
+                <h3>Example:</h3>
+                <p>Align the third flex item in the middle of the container:</p>
+                <code>
+< div class="flex-container" >
+    < div >1< /div >
+    < div >2< /div >
+    < div style="align-self: center">3< /div >
+    < div >4< /div >
+< /div > 
+                </code>
+                <h4>Output:</h4>
+                <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 234316.png" alt="the flexible box 3 is aligned on the center">
+            </pre><br>
+            <pre class="code">
+                <h3>Example:</h3>
+                <p>Align the second flex item at the top of the container, and the third flex item at the bottom of the container:</p>
+                <code>
+< div class="flex-container" >
+    < div >1< /div >
+    < div style="align-self: flex-start">2< /div >
+    < div style="align-self: flex-end">3< /div >
+    < div>4< /div >
+< /div >
+                </code>
+                <h4>Output:</h4>
+                <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-25 235138.png" alt="flexible box 2 is on the top of the container">
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

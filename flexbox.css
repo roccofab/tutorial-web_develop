@@ -1,0 +1,116 @@
+
+  body {
+    background-image:  url(https://tse4.mm.bing.net/th?id=OIP.RxvJjIhW3_DpUjmmo3qXOAHaEo&pid=Api&P=0&h=180);
+    position: relative;
+    color: white;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding:10px;
+    font-family: 'Handjet', cursive;
+    position: fixed;
+   }
+   header a{
+    margin-right: 10px;
+    margin-left: 20px;       
+   }
+   button {
+    background-color: rgba(128, 128, 128, 0.19);
+    border-radius: 50%;
+    height: 10vh;
+   }
+   button:hover{
+    background-color: white;
+   }
+  .container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+    
+  }
+ 
+  .element1 {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+  }
+  .code1 {
+    background-color:  white;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
+ img {
+  width: 50%;
+  height: auto;
+ }
+ @media (max-width: 400px) {
+  .element1,
+  .code1 {
+     max-width:100%;
+      display: flex;
+      height: auto;
+  }
+}
+.element1 pre {
+  max-width: 100%;
+  overflow-x: scroll; 
+  overflow-y: scroll;
+}
+code {
+  font-family: 'Source Code Pro', monospace;;
+  background-color: rgba(128, 128, 128, 0.227);
+  overflow-x: scroll;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h3,
+h4 {
+  font-family: 'Noto Sans', sans-serif;
+}
+.next {
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.next a{
+  font-size: 40px;
+  color: rgb(4, 3, 3);
+}
+.next img{
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+  color: white;
+}
+.tableContent {
+   border: 2px solid red;
+   padding: 10px;
+}
+.tableContent td{
+   padding-bottom: 20px;
+   padding-right: 20px;
+   border-bottom: 2px solid red;
+}
+.element1 p{
+  font-weight: bolder;
+}
+hr {
+  width: 100%;
+}
+@media (max-width: 400px) {
+  img {
+    width:90%;
+  }
+}

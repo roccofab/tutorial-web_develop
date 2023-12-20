@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mask example</title>
+    <style>
+        .masked img{
+            -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 75%);
+            mask-image: linear-gradient(to bottom, transparent 5%, black 75%);
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="notmasked">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.CdYg53V0dEet6FXZYbpP-AHaHa&pid=Api&P=0&h=180" alt="">
+        </div>
+        <div class="masked">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.CdYg53V0dEet6FXZYbpP-AHaHa&pid=Api&P=0&h=180" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.9pcUT-M3e0f5p-r3uusLXQHaHa&pid=Api&P=0&h=180);
+    position: relative;
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding:10px;
+    font-family: 'Handjet', cursive;
+    position: fixed;
+   }
+   header a{
+    margin-right: 10px;
+    margin-left: 20px;       
+   }
+   button {
+    background-color: rgba(128, 128, 128, 0.19);
+    border-radius: 50%;
+    height: 10vh;
+   }
+   button:hover{
+    background-color: white;
+   }
+.examplemet {
+    background-color: white;
+    color: black;
+    font-family: 'PT Serif', serif;
+}
+.examplepro,
+.exampletime,
+.examplekbd,
+.exampledatalist,
+.exampleabbr,
+.exampledetails,
+.examplecanvas {
+    background-color: white;
+    color: black;
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    font-size: 1rem;
+    background-color: black;
+}
+@media screen and (max-width: 400px) {
+    .container,
+    .meter,
+    #defmet,
+    .examplemet,
+    .progress,
+    .defpro,
+    .examplepro,
+    .time,
+    #deftime, 
+    .exampletime,
+    .kbd,
+    .defkbd,
+    .examplekbd,
+    .datalist,
+    .defdatalist,
+    .exampledatalist,
+    .abbreviation,
+    #defabbreviation,
+    .details,
+    #defdetails,
+    .canvas,
+    #defcanvas {
+        
+        max-width: 95%;
+        height:auto; 
+    }
+}
+img {
+    max-width: 100%; 
+    height: auto;
+}
+.code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgba(128, 128, 128, 0.227);
+}
+.element1 {
+    padding-top: 50px;
+}
+@media screen and (max-width: 700px) {
+    .element1 {
+        padding-top: 60px;
+    }
+}
+
+   

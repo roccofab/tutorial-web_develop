@@ -1,0 +1,47 @@
+body {
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.9pcUT-M3e0f5p-r3uusLXQHaHa&pid=Api&P=0&h=180)
+}
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding:10px;
+    font-family: 'Handjet', cursive;
+    position: fixed;
+   }
+   header a{
+    margin-right: 10px;
+    margin-left: 20px;       
+   }
+   button {
+    background-color: rgba(128, 128, 128, 0.19);
+    border-radius: 50%;
+    height: 10vh;
+   }
+   button:hover{
+    background-color: white;
+   }
+  .container {
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+  }
+.table{
+    border: 5px solid;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: scroll;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.table td{
+   padding: 20px 20px 30px 20px;
+   color: white;
+   background-color: rgba(128, 128, 128, 0.303);;
+}
+@media (max-width: 750px) {
+    .table {
+        padding-top: 20px;
+    }
+}

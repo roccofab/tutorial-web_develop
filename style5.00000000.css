@@ -1,0 +1,55 @@
+body {
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.RxvJjIhW3_DpUjmmo3qXOAHaEo&pid=Api&P=0&h=180);
+    position:relative;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  padding:10px;
+  font-family: 'Handjet', cursive;
+  position: fixed;
+ }
+ header a{
+  margin-right: 10px;
+  margin-left: 20px;       
+ }
+ button {
+  background-color: rgba(128, 128, 128, 0.19);
+  border-radius: 50%;
+  height: 10vh;
+ }
+ button:hover{
+  background-color: white;
+ }
+.element1 {
+    color: white;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+@media screen and (max-width:400px) {
+    .element3 img{
+        width: 95%;
+        height: auto;
+    }
+}
+h1,
+h3,
+h4,
+h5 {
+  font-family: 'Noto Sans', sans-serif;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+  }
+  @media screen and (max-width:750px) {
+    h1 {
+        margin-top: 60px;
+    }
+  }

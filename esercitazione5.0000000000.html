@@ -1,0 +1,719 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Properties</title>
+    <link rel="stylesheet" href="style5.0000000000.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto:ital,wght@1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="file:///C:/Users/lenovo/Desktop/sito/htmlCssTutorial.html/index.html">
+        <button >Homepage</button>
+        </a>  
+    </header>
+    <div class="container">
+        <div class="element2"><br>
+            <h1 style="text-align: center;">Advanced CSS properties</h1>
+            <p>
+                CSS describes how HTML elements should be presented on the web page.
+                It provides colors, positions to the HTML elements, etc., create animations,
+                and amplify your web page. Developers and web designers are intrigued
+                by ways to try out cool CSS tricks and tips and contribute to improving what CSS can do.
+            </p>
+            <p>
+                As CSS is becoming more dominant, there are many opportunities developers
+                and designers can use to create engaging and browser-compatible websites.
+            </p>
+        </div>
+        <div class="element3">
+            <p>
+                <strong>TABLE OF CONTENTS</strong>
+            </p>
+            <ul>
+                <li>
+                    <a href="#benefits-advanced-css">Benefits of Advanced CSS Tricks</a>
+                </li>
+                <li>
+                    <a href="#advanced-tricks"> Advanced CSS Tricks and Tips </a>
+                </li>
+            </ul>
+        </div>
+        <div class="element4">
+            <h2 id="benefits-advanced-css">Benefits of Advanced CSS Tricks</h2>
+            <p>
+                CSS tricks can provide many benefits, including improved design
+                and layout of web pages, enabling developers to create more complex
+                responsive web applications. Overall, advanced CSS tricks can help create
+                more polished and cross-functional websites and web applications.
+            </p>
+            <p>
+                Several responsive and lightweight CSS frameworks are frequently in use by developers
+                and designers that make it simpler to add visual elements like forms, buttons, panels, breadcrumbs, etc.,
+                and implement functions. It simplifies the process of creating websites.
+                Regardless of the browser versions, these websites will work efficiently.
+                As a result, there will be less chance of coding errors during cross browser testing.
+            </p>
+            <p>
+                The availability of ready-made style sheet frameworks
+                substantially speeds up project implementation and simplifies web development.
+                Users may accomplish the required activities by spending little time
+                studying and immersing themselves in CSS code.
+            </p>
+            <p>
+                Another benefit is the ability to create a user interface that is both user-friendly
+                and aesthetically pleasing, with the flexibility to change it
+                during project updates without having to start from scratch.
+            </p>
+        </div>
+        <div class="element5">
+            <h2 id="advanced-tricks">Advanced CSS Tricks and Tips</h2>
+            <h4 style="font-size: 20px;">1. Responsive CSS Grid</h4>
+            <p>
+                While taking care of the responsive design,
+                you need to ensure the grid is responsive.
+                Responsive CSS grid is one of the best CSS tricks and tips
+                that offer different ways of creating a customizable grid, 
+                irrespective of the device. The most reliable thing is that the CSS
+                grid operates with equal or unequal column sizes.
+            </p>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/grid.png" alt="CSS grid layout"><br>
+            <a href="" style="font-size: 30px; color: blue;">See more about CSS grid layout</a>
+        </div><br>
+        <div class="element4.5">
+            <h4 style="font-size: 20px;">2. Flexbox(flexible box)</h4>
+            <p>
+                Flexbox layout is most appropriate to the components
+                of an application, and small-scale layouts,
+                while the Grid layout is intended for larger scale layouts.
+            </p>
+            <p>The flexible box  aims at providing a more efficient way
+                to lay out, align and distribute space among items in a container,
+                even when their size is unknown and/or dynamic (thus the word “flex”)
+            </p>
+            <p>
+                <strong>Flex Properties:</strong>
+            </p>
+            <p style="padding-left: 20px; text-decoration: underline;">
+                <strong>Display:</strong>
+            </p>
+            <p>
+                This define a flex container; inline or block depending
+                on the given value.
+                It enables a flex context for all its direct children.
+            </p><br>
+            <span>
+                <p style="padding-left: 10px;">
+                    .container {
+                    </p>
+                    <p style="padding-left: 30px;">
+                        display: flex; /*or inline flex*/
+                    </p>
+                    <p style="padding-left: 10px;">
+                    }
+                </p>  
+            </span>
+           <img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg" alt="display: flex;">
+        
+        
+            <p style="padding-left: 20px; text-decoration: underline;">
+                <strong>flex-direction:</strong>
+            </p>
+            <p>
+                This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
+            </p><br>
+            <span>
+                <p style="padding-left: 10px;">
+                    .container {
+                    </p>
+                    <p style="padding-left: 30px;">
+                        flex-direction: row | row-reverse | column | column-reverse;
+                    </p>
+                    <p style="padding-left: 10px;">
+                    }
+                </p>  
+            </span>
+            <ul>
+                <li>
+                    row (default): left to right in ltr; right to left in rtl
+                </li>
+                <li>
+                    row-reverse: right to left in ltr; left to right in rtl
+                </li>
+                <li>
+                    column: same as row but top to bottom
+                </li>
+                <li>
+                    column-reverse: same as row-reverse but bottom to top
+                </li>
+            </ul>
+            <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg" alt="flex-direction">
+        
+        
+            <p style="padding-left: 20px; text-decoration: underline;">
+                <strong>flex-wrap:</strong>
+            </p>
+            <p>
+                By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+            </p><br>
+            <span>
+                <p style="padding-left: 10px;">
+                    .container {
+                    </p>
+                    <p style="padding-left: 30px;">
+                        flex-wrap:  nowrap | wrap | wrap-reverse;
+                    </p>
+                    <p style="padding-left: 10px;">
+                    }
+                </p>  
+            </span>
+            <ul>
+                <li>
+                    nowrap (default): all flex items will be on one line
+                </li>
+                <li>
+                    wrap: flex items will wrap onto multiple lines, from top to bottom.
+                </li>
+                <li>
+                    wrap-reverse: flex items will wrap onto multiple lines from bottom to top.
+                </li>
+            </ul>
+            <img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg" alt="flex-wrap">
+        
+        
+            <h4 style="font-size: 20px;">justify-content</h4>
+            <p>
+                This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
+            </p><br>
+            <span>
+                <p style="padding-left: 10px;">
+                    .container {
+                    </p>
+                    <p style="padding-left: 30px;">
+                        justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+                    </p>
+                    <p style="padding-left: 10px;">
+                    }
+                </p>  
+            </span>
+            <ul>
+                <li>
+                    flex-start (default): items are packed toward the start of the flex-direction.
+                </li>
+                <li>
+                    flex-end: items are packed toward the end of the flex-direction.
+                </li>
+                <li>
+                    start: items are packed toward the start of the writing-mode direction.
+                </li>
+                <li>
+                    end: items are packed toward the end of the writing-mode direction.
+                </li>
+                <li>
+                    left: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.
+                </li>
+                <li>
+                    right: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like end.
+                </li>
+                <li>
+                    center: items are centered along the line
+                </li>
+                <li>
+                    space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+                </li>
+                <li>
+                    space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+                </li>
+                <li>
+                    space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+                </li>
+                <img src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg" alt="">
+            </ul>
+        </div><br>
+    <div class="element5">
+        <h4 style="font-size: 20px;">3. Vertically Align with Flexbox</h4>
+        <p>
+            There are very few CSS tricks available to vertically center elements
+            in CSS.
+            It has been a pain point for many developers.
+            Vertically aligned with CSS Flexbox is one of the best CSS tricks
+            by which developers can align effortlessly with the align-items,
+            align-self, and justify-content properties.
+        </p>
+        <div class="flex-code">
+            <p>
+                < div class="align-vertically" >
+            </p>
+            <p style="padding-left: 20px;">
+                Demonstrating Vertically Align CSS Property!
+            </p>
+            <p>
+                < /div >
+            </p><br>
+            <p>
+                .align-vertically {
+                </p>
+                <p style="padding-left: 30px;">
+                    background: black;
+                </p>
+                <p style="padding-left: 30px;">
+                    color: #eff542;
+                </p>
+                <p style="padding-left: 30px;">
+                    display: flex;
+                </p>
+                <p style="padding-left: 30px;">
+                    align-items: center;
+                </p>
+                <p style="padding-left: 30px;">
+                    height: 200px;
+                </p>
+                <p style="padding-left: 10px;">
+                }
+            </p>
+        </div>
+        <div class="out-flexcode">
+            <p>
+                <strong>Output:</strong>
+            </p>
+            <span>
+                <img src="https://www.lambdatest.com/blog/wp-content/uploads/2023/01/vertically252520aligned252520CSS.png" alt="The output of the code.">
+            </span>
+        </div><br>
+        <a href="file:///C:/Users/lenovo/Desktop/sito/htmlCssTutorial.html/cssFlex.html" style="font-size: 30px;color: blue;">See more about CSS flexbox</a>
+    </div>
+    <div class="element6"><br>
+        <h4 style="font-size: 20px;">4. Masking</h4>
+        <p>
+            Let’s say you want to use an image but only want to show certain parts
+            of it.
+            You can achieve this using the mask-image property.
+            CSS masking is among the advanced CSS tricks that allow you to define a mask shape
+            applied to the image.
+            Anything that appears outside the mask shape is cut out,
+            and the rest is presented.
+            It works pretty much the same as masking in Photoshop.
+        </p>
+        <p>
+            You can perform Masking using two ways:
+        </p>
+        <ol>
+            <li>
+                Using Linear Gradient and Radial Gradient
+            </li>
+            <li>
+                Masking with Images
+            </li>
+        </ol>
+        <div class="flex-code">
+            <p>
+                <strong>Example:</strong>
+            </p>
+            <p>
+                #masked {
+                </p>
+                <p>
+                    -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 75%);
+                </p>
+                <p>
+                    mask-image: linear-gradient(to bottom, transparent 5%, black 75%);
+                </p>
+                <p style="padding-left: 10px;">
+                }
+            </p>
+        </div>
+        <p>
+            <strong>Output:</strong>
+        </p>
+        <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-10-05 145142.png" alt="linear gradient applied to ray-x image">
+    </div><br>
+    <div class="element7">
+        <h4 style="font-size: 20px;">5. Shape Outside</h4>
+        <p>
+            Shape-outside is a CSS trick that lets you change the shape of the items
+            wrapped around it instead of being restricted to a rectangular box.
+        </p>
+        <p>
+            The shape-outside property allows shaping the content
+            to fit the image.
+            It takes a basic shape and applies a shape function to the item.
+            This property works only for floated elements.
+        </p>
+        <div class="flex-code">
+            <p>
+                <strong>Example:</strong>
+            </p>
+            <p style="padding-left: 5px;">
+                < section class = "shape-outside" >
+            </p>
+            <p style="padding-left: 20px;">
+                < div class="shape-outside__circle" >
+            </p>
+            <p style="padding-left: 20px;">
+                < /div>
+            </p>
+            <p style="padding-left: 20px;">
+                < h2 >Shape Outside CSS Property< /h2 >
+            </p>
+            <p style="padding-left: 20px;">
+                < p >
+            </p>
+            <p style="padding-left: 40px;">
+                Morbi tincidunt lectus non feugiat tristique. In blandit ornare odio sit amet cursus. In mollis dictum mollis. Suspendisse sed sagittis sem. Morbi euismod ligula id purus ornare, id gravida augue vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent eu consectetur neque, a commodo arcu. Vivamus lorem ante, pulvinar eu cursus nec, congue ut tellus. Mauris sit amet risus auctor, dignissim ligula vel, commodo purus. Ut sapien nunc, dignissim eu diam quis, tempor scelerisque leo.
+            </p>
+            <p style="padding-left: 20px;">
+                < /p >
+            </p>
+            <p style="padding-left: 5px;">
+                < /section >
+            </p><br>
+            <p>
+                .shape-outside__circle {
+                </p>
+                <p style="padding-left: 20px;">
+                    height: 150px;
+                </p>
+                <p style="padding-left: 20px;">
+                    width: 150px;
+                </p>
+                <p style="padding-left: 20px;">
+                    border-radius: 50%;
+                </p>
+                <p style="padding-left: 20px;">
+                    background-color: 	#DC143C;
+                </p>
+                <p style="padding-left: 20px;">
+                    margin: 25px 25px 5px 0;
+                </p>
+                <p style="padding-left: 20px;">
+                    float: left 
+                </p>
+                <p style="padding-left: 20px;">
+                    shape-outside: circle();
+                </p>
+                <p style="padding-left: 5px;">
+                }
+            </p>
+        </div>
+        <p>
+            <strong>Output:</strong>
+        </p>
+        <img src="https://www.lambdatest.com/blog/wp-content/uploads/2023/01/unnamed20-202023-01-20T194957.785.png" alt="shape-outside">
+    </div>
+    <h4 style="font-size: 20px;">6. Zoom on hover</h4>
+    <div class="element8">
+        <p>
+            Zoom on hover is a CSS trick that makes web pages
+            more attractive.
+            The zoom-on-hover effect can be used in galleries,
+            selling products where you need to enlarge the image
+            to have a better view. 
+        </p>
+        <div class="flex-code">
+            <p>
+                <strong>Example:</strong>
+            </p>
+            <p>
+                < div class="zoom">
+            </p>
+            <p>
+                < /div >
+            </p><br>
+            <p style="margin-left: 5px;">
+                .zoom {
+                </p>
+                <p style="padding-left: 20px;">
+                    padding: 20px;
+                </p>
+                <p style="padding-left: 20px;">
+                    background-color: green;
+                </p>
+                <p style="padding-left: 20px;">
+                    transition: transform .2s; /* Animation */
+                </p>
+                <p style="padding-left: 20px;">
+                    width: 100px;
+                </p>
+                <p style="padding-left: 20px;">
+                    height: 100px;
+                </p>
+                <p style="padding-left: 20px;">
+                    margin: 0 auto;
+                </p>
+                <p style="padding-left: 5px;">
+                }
+            </p><br>
+            <p style="padding-left: 5px;">
+                .zoom : hover {
+                </p>
+                <p style="padding-left: 20px;">
+                    transform: scale(1.5);
+                </p>
+                <p style="padding-left: 5px;">
+                }
+            </p>
+        </div>
+        <p>
+            <strong>Output:</strong>
+        </p>
+        <div class="zoom">
+            
+        </div>
+    
+    </div>
+    <h4 style="font-size: 20px;">7. Generate Text Animation</h4>
+    <div class="element9">
+        <p>
+            CSS Animation is one of the popular advanced CSS tricks
+            and tips that can bring creativity, grab the user’s attention,
+            and convey things quickly while improving usability.
+            The way users read and interact
+            with text elements is changing due to CSS,
+            from hover tweaks to words that float in or scroll on the page.
+        </p>
+        <p>
+            What was previously a static element can now have a dynamic display.
+            It’s also a relatively popular option for websites with few other creative elements
+            to draw users.
+            Some of the most popular text animations are:
+        </p>
+        <ul>
+            <li>
+                <strong>Dropping Text</strong>
+            </li>
+            <li>
+                <strong>Typing Text</strong>
+            </li>
+            <li>
+                <strong>Neon Text</strong>
+            </li>
+            <li>
+                <strong>Floating Text</strong>
+            </li>
+            <li>
+                <strong>Rotate Text</strong>
+            </li>
+        </ul>
+        <p>
+            <strong>Example:</strong>
+        </p>
+        <div class="flex-code">
+            <p>
+                < div class="container" >
+            </p>
+            <p style="padding-left: 20px;">
+                < div class="typewriter" >CSS animation< /div >
+            </p>
+            <p>
+                < div >
+            </p><br>
+            <p style="padding-left: 10px;">
+                .container {
+                </p>
+                <p style="padding-left: 30px;">
+                    display: flex;
+                </p>
+                <p style="padding-left: 30px;">
+                    justify-content: center;
+                </p>
+                <p style="padding-left: 30px;">
+                    align-items: center;
+                </p>
+                <p style="padding-left: 30px;">
+                    height: 100vh;
+                </p>
+                <p style="padding-left: 30px;">
+                    font-size: clamp(2rem, 2.8vw, 5rem);
+                </p>
+                <p style="padding-left: 30px;">
+                    font-family: Raleway;
+                </p>
+                <p style="padding-left: 30px;">
+                    font-weight: bold;
+                </p>
+                <p style="padding-left: 10px;">
+                }
+            </p><br>
+            <p style="padding-left: 10px;">
+                .typewriter {
+                </p>
+                <p style="padding-left: 30px;">
+                    width: 21.5ch;
+                </p>
+                <p style="padding-left: 30px;">
+                    white-space: nowrap;
+                </p>
+                <p style="padding-left: 30px;">
+                    overflow: hidden; 
+                </p>
+                <p style="padding-left: 30px;">
+                    border-right: 4px solid #212121;
+                </p>
+                <p style="padding-left: 30px;">
+                    animation: cursor 1s step-start infinite, 
+                </p>
+                <p style="padding-left: 30px;">
+                    text 5s steps(18) alternate infinite;
+                </p>
+                <p style="padding-left: 10px;">
+                }
+            </p><br>
+            <p style="padding-left: 10px;">
+                @keyframes cursor {
+                </p>
+                <p style="padding-left: 30px;">
+                    0%, 100% { 
+                    </p>
+                    <p style="padding-left: 40px;">
+                        border-color: #212121; 
+                    </p>
+                    <p style="padding-left: 30px;">
+                    }
+                </p>
+                <p style="padding-left: 10px;">
+                }
+            </p><br>
+            <p style="padding-left: 10px;">
+                @keyframes text {
+                </p>
+                <p style="padding-left: 30px;">
+                    0% {
+                    </p>
+                    <p style="padding-left: 40px;">
+                        width: 0;
+                    </p>
+                    <p style="padding-left: 30px;">
+                    }
+                </p>
+                <p style="padding-left: 30px;">
+                    100% {
+                    </p>
+                    <p style="padding-left: 40px;">
+                        width: 21.5ch;
+                    </p>
+                    <p style="padding-left: 30px;">
+                    }
+                </p>
+                <p style="padding-left: 10px;">
+                }
+            </p>
+        </div>
+        <p>
+            <strong>Output:</strong>
+        </p>
+        <div class="container2">
+            <div class="typewriter">CSS animation</div>
+        </div>
+    </dv>
+    <div class="element10">
+        <h4 style="font-size: 20px;">8. Background Repeat</h4>
+        <p>
+            CSS background is one of the most used advanced CSS tricks;
+            however very rarely used by developers.
+            Using multiple backgrounds still needs to be well-known
+            among all developers.
+        </p> 
+        <p>
+            The background-repeat property sets how a background image will be repeated.
+            It is used in conjunction with the background-image property.
+            We can repeat the background image along the horizontal axis
+            or vertical axis or not repeat it at all.
+        </p>
+        <p>
+            <strong>Property Values:</strong>
+        </p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        Value
+                    </td>
+                    <td>
+                        Description
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        repeat
+                    </td>
+                    <td>
+                        The background image will be repeated both vertically and horizontally.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        repeat-x
+                    </td>
+                    <td>
+                        The background image will be repeated horizontally only.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        repeat-y
+                    </td>
+                    <td>
+                        The background image will be repeated vertically only.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        space
+                    </td>
+                    <td>
+                        The background image will be repeated as many times as it will fit, but it is not clipped.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        round
+                    </td>
+                    <td>
+                        The background image will stretch or shrink to avoid clipping and to remove gaps.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        no-repeat
+                    </td>
+                    <td>
+                        The background image will not be repeated
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        initial
+                    </td>
+                    <td>
+                        Set this property to its default value.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="C:\Users\lenovo\Documents\Background2520Repeat.png" alt="">   
+    </div>
+    <div class="element11"><br>
+        <h4 style="font-size: 20px;">9. CSS Gradients</h4>
+        <p>
+            CSS Gradients are considered one of the advanced CSS tricks.
+            Back in the day, web designers could only create gradient backgrounds
+            using Photoshop and then display them on websites using the background-image
+            property.
+        </p>
+        <p>
+            With CSS Gradients, you can create gradients in HTML/CSS,
+            resulting in fewer resources, faster loading times, and a better user experience.
+        </p>
+        <div class="gradients">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.06MO30qswJrl1pNZ9DXImwHaHa&pid=Api&P=0&h=180" alt="CSS gradients">
+        </div>
+    </div>
+    <div class="element12">
+        
+    </div>
+</div>    
+</body>
+</html>

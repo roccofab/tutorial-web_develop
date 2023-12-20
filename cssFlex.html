@@ -1,0 +1,443 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <link rel="stylesheet" href="flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@800&family=Mooli&family=Nunito:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto:ital,wght@1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">">
+    
+</head>
+<body>
+    <header>
+        <a href="file:///C:/Users/lenovo/Desktop/sito/htmlCssTutorial.html/index.html">
+        <button >Homepage</button>
+        </a>  
+    </header>
+    <div class="container">
+        <div class="element1">
+            <h1>Basic Concepts about Flexible layout webpages </h1>
+            <p>
+                The flexible box layout module was designed as a one-dimensional layout model,
+                and as a method that could offer space distribution between items in an interface
+                and powerful alignment capabilities.
+            </p>
+            <p>
+                When we describe flexbox as being one-dimensional we are describing the fact that flexbox deals with layout
+                in one dimension at a time — either as a row or as a column.
+                This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.
+            </p>
+        </div>
+        <div class="element1">
+            <h1>The two axes of flexbox</h1>
+            <p>
+                When working with flexbox you need to think in terms of two axes — the main axis and the cross axis.
+                The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it.
+                Everything we do with flexbox refers back to these axes,
+                so it is worth understanding how they work from the outset.
+            </p>
+        </div>
+        <div class="element1">
+            <h1>CSS Flexbox Properties:</h1>
+            <p>The following table lists all the CSS Flexbox Container properties:</p>
+            <table class="tableContent">
+                <tr>
+                    <td>
+                        <strong>Property:</strong>
+                    </td>
+                    <td>
+                        <strong>Description:</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-decoration: underline;">
+                        align-content
+                    </td>
+                    <td>
+                        Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-decoration: underline;">
+                        align-items
+                    </td>
+                    <td>
+                        Vertically aligns the flex items when the items do not use all available space on the cross-axis
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-decoration: underline;">
+                        display
+                    </td>
+                    <td>
+                        Specifies the type of box used for an HTML element
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-decoration: underline;">
+                        flex-direction
+                    </td>
+                    <td>
+                        Specifies the direction of the flexible items inside a flex container
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-decoration: underline;">
+                        flex-flow
+                    </td>
+                    <td>
+                        A shorthand property for flex-direction and flex-wrap
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-decoration: underline;">
+                        flex-wrap
+                    </td>
+                    <td>
+                        Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-decoration: underline;">
+                        justify-content
+                    </td>
+                    <td>
+                        Horizontally aligns the flex items when the items do not use all available space on the main-axis
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="element1">
+            <h1> Flexbox Elements</h1>
+            <p>A flex container with three flex items</p>
+            <pre class="code1">
+                <h3>Example:</h3>
+                <code>
+< div class="flex-container" >
+< div >1< /div >
+< div >2< /div >
+< div >3< /div >
+< div >4< /div >
+< /div >
+                </code>
+            </pre>
+            <p>The flex container becomes flexible by setting the display property to flex: </p>
+            <pre class="code1">
+                <h3>Example:</h3>
+                <code>
+.flex-container {
+    display: flex;
+}
+                </code>
+                <h3>Output:</h3>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.9Pi5Rec01Ts-j25NqMx6UQHaEK&pid=Api&P=0&h=180" alt="display: flex;">
+            </pre>
+    
+        </div>
+        <div class="element1">
+            <h2>The main flex properties are:</h2>
+            <ol>
+                <li>
+                    <a href="#flex-direction" style="color: red;">
+                        flex-direction;
+                    </a>
+                </li>
+                <li>
+                    <a href="#flex-wrap" style=" color: red;">
+                        flex-wrap;
+                    </a>
+                </li>
+                <li>
+                    <a href="#flex.flow" style="color: red;">
+                        flex-flow;
+                    </a>
+                </li>
+                <li>
+                    <a href="#justify.content" style="color: red;">
+                        justify-content;
+                    </a>
+                </li>
+                <li>
+                    <a href="#align.items" style="color: red;">
+                        align-items;
+                    </a>
+                </li>
+                <li>
+                    <a href="#align.content" style="color: red;">
+                        align-content;
+                        <a href=""></a>
+                    </li>
+                </ol>
+            </div>
+            <div class="element1">
+                <h1 id="flex-direction">1) Flex-direction property:</a></h1>
+                <p>The flex-direction property defines in which direction the container wants to stack the flex items.</p>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">column</strong> value stacks <br> the flex items vertically :</p>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 010759.png" alt="">
+                </pre><br>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">row</strong> value stacks <br> the flex items horizontally</p>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 011005.png" alt="">
+                </pre><br>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">column-reverse</strong> value stacks <br> the flex items vertically:</p>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 011207.png" alt="">
+                </pre><br>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p> <strong style="color: red;">Row-reverse</strong> value stacks <br> from right to left horizontally:</p>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 011322.png" alt="">
+                </pre>
+            </div>
+            <div class="element1">
+                <h1 id="flex-wrap">2) Flex-wrap Property:</h1>
+                <p>The flex-wrap property specifies whether <br> the flex items should wrap or not.</p>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">wrap</strong> value specifies that <br> the flex items will wrap :</p>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 011704.png" alt="flex-wrap property"><br>
+                </pre><br>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">nowrap</strong> value specifies that <br> the flex items will not wrap</p>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+                    </code>
+                    <h4>Output: </h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 012013.png" alt="The difference between wrap and nowrap"><br>
+                </pre>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 012419.png" alt="flex-wrap: wrap-reverse" style="height: 30vh"><br>
+
+                </pre><br>
+            </div>
+            <div class="element1">
+                <h1 id="flex.flow">3) Flex-flow property:</h1>
+                <p>
+                    The <strong style="color: red;">flex-flow</strong> property is a shorthand property for setting both
+                    the flex-direction and flex-wrap properties.
+                </p>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <code>
+.flex-container {
+    display: flex;
+    flex-flow: row;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 012602.png" alt="flex-flow: row;">
+                </pre><br>
+            </div>
+            <div class="element1">
+                <h1 id="justify.content">4) Justify-content property:</h1>
+                <p>The justify-content property is used to align the flex items:</p>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">center</strong> value align the flex items at the center</p>
+                    <code>
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 012936.png" alt=""><br>
+                </pre><br>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;"> flex-start</strong> value aligns  items at the beginning <br>of the container(default)</p>
+                    <code>
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 013109.png" alt=""><br>
+                </pre><br>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">flex-end</strong> value align the flex items  at the end <br>of the container:</p>
+                    <code>
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+ }
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 013320.png" alt=""><br>
+                </pre>
+            </div>
+            <div class="element1">
+                <h1 id="align.items">5) The Align-items property:</h1>
+                <p>The align-items property is used to align the flex items.</p>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">center</strong> value align items  in the middle <br> of the container:</p>
+                    <code>
+ .flex-container {
+    display: flex;
+    height: 200px;
+    align-items: center;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 005048.png" alt="">
+                </div><br>
+                <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">flex-start </strong> value aligns the flex items <br> at the top of the container:</p>
+                    <code>
+.flex-container {
+    display: flex;
+    height: 200px;
+    align-items: flex-start;
+}
+                    </code>
+                    <h4>Output:</h4>
+                    <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 004736.png" alt="">
+                </pre><br>
+                <pre class="code1">
+                   <h3>Example:</h3>
+                   <p>The <strong style="color: red;">flex-end</strong> value aligns the flex items <br> at the bottom of the container:</p>
+                   <code>
+.flex-container {
+    display: flex;
+    height: 200px;
+    align-items: flex-end;
+}
+                   </code>
+                   <h4>Output:</h4>
+                   <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 005633.png" alt="">
+                </pre><br>
+                <div class="element1">
+                    <h1 id="align.content">6) Align-content property:</h1>
+                    <p>The align-content property is used to align the flex lines.</p>
+                    <pre class="code1">
+                       <h3>Example:</h3>
+                       <p>The <strong style="color: red;">space-between</strong> value displays the flex lines <br> with equal space between them:</p>
+                       <code>
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+                       </code>
+                       <h4>Output:</h4>
+                       <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 001001.png" alt="">
+                    </pre>
+                 </div><br>
+                 <pre class="code1">
+                     <h3>Example:</h3>
+                     <p>The <strong style="color: red;">stretch</strong>value stretches the flex lines to take up <br> the remaining space (this is default):</p>
+                     <code>
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+                     </code>
+                     <h4>Output:</h4>
+                     <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 002227.png" alt="">
+                 </pre><br>
+                 <pre class="code1">
+                     <h3>Example:</h3>
+                     <p>The <strong style="color: red;">center </strong> value displays the flex lines <br> in the middle of the container:</p>
+                     <code>
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: center;
+}    
+                     </code>
+                     <h4>Output:</h4>
+                     <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-11-19 003107.png" alt="">
+                 </pre><br>
+                 <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">flex-start</strong> value display the flex lines <br> at the start of the container</p>
+                    <code>
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+                    </code>
+                 </pre><br>
+                 <pre class="code1">
+                    <h3>Example:</h3>
+                    <p>The <strong style="color: red;">flex-end</strong>  value displays the flex lines <br> at the end of the container: </p>
+                    <code>
+.flex-container {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+                    </code>
+                 </pre>
+            </div>
+            <div class="next">
+                <a href="file:///C:/Users/lenovo/Desktop/sito/htmlCssTutorial.html/cssFlex2.0.html">NEXT</a>
+                <img src="C:\Users\lenovo\Downloads\angle-double-small-right.png" alt="right double arrow">
+            </div>
+        </div>
+    </body>
+    </html>

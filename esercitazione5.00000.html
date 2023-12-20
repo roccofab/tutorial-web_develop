@@ -1,0 +1,373 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="cssFlex2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto:ital,wght@1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="file:///C:/Users/lenovo/Desktop/sito/htmlCssTutorial.html/index.html">
+        <button >Homepage</button>
+        </a>  
+    </header>
+    <div class="container">
+        <div class="content1">
+            <h5>An html form is used to collect user input. The user input is most often sent to a server for processing:</h5>
+        </div><br>
+        <div class="content">    
+            <pre class="code">
+               <h3>Example:</h3>
+               <code>
+< html lang="en" >
+< head> 
+    < meta charset="UTF-8" >
+    < meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    < title >Form and Input Types< /title >
+< /head >
+< body >
+    < form action="" method="get" >
+        < label for="fname" >first name< /label >
+        < input type="text" id="fname" placeholder="Name" >< br >
+        < label for="lname" >Last Name< /label >
+        < input type="text" id="lname" placeholder="Last Name" >< br >
+        < label for="password">Password< /label >
+        < input type="password" id="password" placeholder="password" >< br > 
+        < label for="email">E-mail< /label > 
+        < input type="email" id="email" placeholder="EnterEmail@gmail.com">< br >< br >
+        < label for="gender">Gender< /label >< br >
+        < input type="radio" id="gender" >
+        Man
+        < input type="radio" id="gender" >
+        Woman
+        < input type="radio" id="gender">< br >< br >
+        Other
+        < label for="list">Educational Level< /label >< br >
+        < select name="list" id="list" multiple >
+        < option value="opt1">Primary school< /option >
+        < option value="opt2">Secondary school< /option >
+        < option value="opt3">High school< /option >
+        < option value="opt4">Degree/High school Education< /option >
+    < /select >
+    < /form >
+< /body >
+< /html >
+               </code>
+               <h4>Output:</h4>
+               <img src="C:\Users\lenovo\Pictures\Screenshots\Screenshot 2023-12-10 233823.png" alt="input types examples">
+            </pre>
+        </div>
+        <div class="content">
+            <p>The < input > tag specifies an input field where the user can enter data.</p>
+            <p>The < input > element is the most important form element.</p>
+            <p>The < input > element can be displayed in several ways, depending on the type attribute.</p>
+        </div>
+        <div class="content">
+            <h5 style="font-size: 20px;">The main input types are as follows:</h5>
+            <ul>
+                <li>
+                    < input type = "button" >
+                </li><br>
+                <li>
+                    < input type="checkbox" >
+                </li><br>
+                <li>
+                    < input type="radio" >
+                </li><br>
+                <li>
+                    < input type ="color" >
+                </li><br>
+                <li>
+                    < input type="date" >
+                </li><br>
+                <li>
+                    < input type="button" >
+                </li><br>
+                <li>
+                    < input type="email" >
+                </li><br>
+                <li>
+                    < input type="password" >
+                </li><br>
+                <li>
+                    < input type="search" >
+                </li><br>
+                <li>
+                    < input type="file" >
+                </li><br>
+                <li>
+                    < input type="range" >
+                </li><br>
+                <li>
+                    < input type="reset" >
+                </li><br>
+                <li>
+                    < input type="url" >
+                </li><br>
+                <li>
+                    < input type="time" >
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h5 style="font-size: 20px;">Tips and Notes:</h5>
+            <p><strong>Tip:</strong> Always use the < label > tag to define labels  for < input type="text" >, < input type="checkbox" >, < input type="radio" >, < input type="file" >, and < input type="password" >.</p>
+        </div><br>
+        <div class="attributes">
+            <h5 style="font-size: 20px;">Attributes:</h5>
+            <div class="content">
+                <table class="tableCont">
+                    <tbody>
+                        <tr>
+                            <th style="border-bottom: 2px solid red; padding-bottom: 10px; background-color: rgba(128, 128, 128, 0.299);">Attribute</th>
+                            <th style="border-bottom: 2px solid red; padding-bottom: 10px; background-color: rgba(128, 128, 128, 0.299);">Value</th>
+                            <th style="border-bottom: 2px solid red; padding-bottom: 10px; background-color: rgba(128, 128, 128, 0.299);">Description</th>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Accept"
+                            </td>
+                            <td>
+                                "file_extension"
+                                <br>
+                                "audio/*"
+                                <br>
+                                "video"
+                                <br>
+                                "image"
+                                <br>
+                                "media_type"
+                            </td>
+                            <td>
+                                "Specifies a filter for what file types the user can pick from the file input dialog box(only for type = "file")"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Alt"
+                            </td>
+                            <td>
+                                "text"
+                            </td>
+                            <td>
+                                "Specifies an alternate text for images(only for type ="image")"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Autocomplete"
+                            </td>
+                            <td>
+                                "On"
+                                <br>
+                                "Off"
+                            </td>
+                            <td>
+                                "Specifies whether an < input > element should have autocomplete enabled"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Autofocus"
+                            </td>
+                            <td>
+                                "autofocus"
+                            </td>
+                            <td>
+                                "Specifies that an < input > element should automatically get focus when the page loads"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Checked"
+                            </td>
+                            <td>
+                                "checked"
+                            </td>
+                            <td>
+                                "Specifies that an < input > element should be pre-selected when the page loads (for type="checkbox" or type="radio")"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Disabled"
+                            </td>
+                            <td>
+                                "disabled"
+                            </td>
+                            <td>
+                                "Specifies that an < input > element should be disabled"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Placeholder"
+                            </td>
+                            <td>
+                                "text"
+                            </td>
+                            <td>
+                                "Specifies a short hint that describes the expected value of an < input > element"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Type"
+                            </td>
+                            <td>
+                                "button"
+                                <br>
+                                "submit"
+                                <br>
+                                "reset"
+                                <br>
+                                "checkbox"
+                                <br>
+                                "radio"
+                                <br>
+                                "text"
+                                <br>
+                                "color"
+                                <br>
+                                "date"
+                                <br>
+                                "datetime-loca"
+                                <br>
+                                "email"
+                                <br>
+                                "file"
+                                <br>
+                                "password"
+                                <br>
+                                "search"
+                                <br>
+                                "range"
+                                <br>
+                                "tel"
+                                <br>
+                                "time"
+                                <br>
+                                "URL"
+                                <br>
+                                "week"
+                                <br>
+                                "hidden"
+                            </td>
+                            <td>
+                                "Specifies the type < input > element to display"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Width"
+                            </td>
+                            <td>
+                                "pixels(px)"
+                            </td>
+                            <td>
+                                "Specifies the width of an < input > element (only for type="image")"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Height"
+                            </td>
+                            <td>
+                                "pixels(px)"
+                            </td>
+                            <td>
+                                "Specifies the height of an < input > element (only for type="image")"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Value"
+                            </td>
+                            <td>
+                                "text"
+                            </td>
+                            <td>
+                                "Specifies the value of an < input > element"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Max"
+                            </td>
+                            <td>
+                                "number"
+                                <br>
+                                "date"
+                            </td>
+                            <td>
+                                "Specifies the maximum value for an < input > element"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Maxlength"
+                            </td>
+                            <td>
+                                "number"
+                            </td>
+                            <td>
+                                "Specifies the maximum number of characters allowed in an < input > element"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Min"
+                            </td>
+                            <td>
+                                "number"
+                                <br>
+                                "date"
+                            </td>
+                            <td>
+                                Specifies a minimum value for an < input > element
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Minlength"
+                            </td>
+                            <td>
+                                "number"
+                            </td>
+                            <td>
+                                "Specifies the minimum number of characters required in an < input > element"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Multiple"
+                            </td>
+                            <td>
+                                "multiple"
+                            </td>
+                            <td>
+                                "Specifies that a user can enter more than one value in an < input > element"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-decoration: underline;">
+                                "Name"
+                            </td>
+                            <td>
+                                "text"
+                            </td>
+                            <td>
+                                "Specifies the name of an < input > element"
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
